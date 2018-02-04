@@ -2,11 +2,11 @@
     fizz = (i%3==0)
     buzz = (i%5==0)
     if fizz&&buzz
-    puts "fizzbuzz"
+    puts "FizzBuzz"
     elsif fizz
-    puts "fizz"
+    puts "Fizz"
     elsif buzz
-    puts "buzz"
+    puts "Buzz"
     else
     puts i
     end

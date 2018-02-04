@@ -1,17 +1,17 @@
-function doFuzzBuzz(num1, num2){
+function doFizzBuzz(num1, num2){
 	    var fizz;
 	    var buzz;
 	for(var i = 1; i < 101; i++){
 		fizz = (i%num1==0);
 		buzz = (i%num2==0);
 		if(fizz && buzz){
-			console.log("fizzbuzz");
+			console.log("FizzBuzz");
 		}
 		else if(fizz){
-			console.log("fizz");
+			console.log("Fizz");
 		}
 		else if(buzz){
-			console.log("buzz");
+			console.log("Buzz");
 		}
 		else {
 			console.log(i);
@@ -19,4 +19,4 @@ function doFuzzBuzz(num1, num2){
 	}
 }
 
-doFuzzBuzz(3, 5);
+doFizzBuzz(3, 5);

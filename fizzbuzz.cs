@@ -1,8 +1,8 @@
-using System.Console;
+using static System.Console;
 
 class FuzzBuzz 
 {
-	static void doFuzzBuzz(int num1, int num2){
+	static void doFizzBuzz(int num1, int num2){
 		bool fizz;
 		bool buzz;
 		
@@ -11,19 +11,19 @@ class FuzzBuzz
 			buzz = (i%num2==0);
 			
 			if(fizz && buzz)
-    			WriteLine("fizzbuzz");
+    			WriteLine("FizzBuzz");
     		
 			else if(fizz)
-    			WriteLine("fizz");
+    			WriteLine("Fizz");
     		
 			else if(buzz)
-    			WriteLine("buzz");
+    			WriteLine("Buzz");
     		
 			else 
-    			WriteLine(i)
+    			WriteLine(i);
 		}
 	}
 	static void Main() {
-		doFuzzBuzz(3,5);
+		doFizzBuzz(3,5);
 	}
 }

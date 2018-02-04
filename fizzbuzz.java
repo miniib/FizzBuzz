@@ -1,19 +1,19 @@
-public class FuzzBuzz {
+public class FizzBuzz {
 	
-	public static void doFuzzBuzz(int num1, int num2){
+	public static void doFizzBuzz(int num1, int num2){
 	    boolean fizz;
 	    boolean buzz;
 		for(int i=1; i<101; i++){
     		fizz = (i%num1==0);
     		buzz = (i%num2==0);
     		if(fizz && buzz){
-    			System.out.println("fizzbuzz");
+    			System.out.println("FizzBuzz");
     		}
     		else if(fizz){
-    			System.out.println("fizz");
+    			System.out.println("Fizz");
     		}
     		else if(buzz){
-    			System.out.println("buzz");
+    			System.out.println("Buzz");
     		}
     		else {
     			System.out.println(i);
@@ -21,6 +21,6 @@ public class FuzzBuzz {
 		}
 	}
     public static void main(String args[]) {
-        doFuzzBuzz(3, 5);
+        doFizzBuzz(3, 5);
     }
 }
